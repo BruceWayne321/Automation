@@ -21,4 +21,5 @@ jobs:
         with:
           app-path: streamlit_app.py
           ruff: true
+      - run: ppip install -r ../../../requirements.txt
       - run: python -m streamlit run ../../../Timesheet_Visualization.py
